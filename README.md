@@ -38,18 +38,23 @@
 
 ![none](https://github.com/S-Arkhipov/Kursovaya/blob/master/07_A4.png)
 
+
 ER-диграммы для всех модулей:
 ![none](https://github.com/S-Arkhipov/Kursovaya/blob/master/uml1f.png)
 ![код](https://github.com/S-Arkhipov/Kursovaya/blob/master/uml1f1.txt)
+Диаграмма классов для потоков
 
 ![none](https://github.com/S-Arkhipov/Kursovaya/blob/master/uml2f.png)
 ![код](https://github.com/S-Arkhipov/Kursovaya/blob/master/uml2f.txt)
+Диаграмма классов для ролей
 
 ![none](https://github.com/S-Arkhipov/Kursovaya/blob/master/uml3f-1.png)
 ![код](https://github.com/S-Arkhipov/Kursovaya/blob/master/uml3f-1.txt)
+Диаграмма классов для модулей
 
 ![none](https://github.com/S-Arkhipov/Kursovaya/blob/master/uml3f-2.png)
 ![код](https://github.com/S-Arkhipov/Kursovaya/blob/master/uml3f-2.txt)
+Диаграмма классов для программных модулей
 
 Расчёт трудозатрат на выполнение проекта:
 
