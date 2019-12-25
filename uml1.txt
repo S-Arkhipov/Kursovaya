@@ -1,0 +1,56 @@
+@startuml
+skinparam class {
+	BackgroundColor White
+	ArrowColor Black
+	BorderColor Black
+}
+class Entity as "Потоки"
+
+class Input as "Входной поток"
+class Output as "Выходной поток"
+class Control as "Поток управления"
+
+class INInfo as "Информационные потоки"
+class OUTMaterial as "Информационные потоки"
+class CTRLInfo as "Информационные потоки"
+
+class IN1 as "Результат проверки"
+class IN2 as "Зона поиска"
+class IN3 as "Оптимальный маршрут"
+class IN4 as "Результат проверки маршрута"
+class IN5 as "Граф карты"
+class IN6 as "Проверенный граф"
+
+class OUT1 as "Возможный маршрут"
+class OUT2 as "Ошибка поиска"
+class OUT3 as "Поправочные данные"
+class OUT4 as "Маршрут"
+class OUT5 as "Пакет данных"
+
+class CTRL1 as "Поток управления"
+
+Entity <|-- Input 
+Entity <|-- Output 
+Entity <|-- Control 
+
+Input <|-- INInfo 
+Output <|-- OUTMaterial 
+Control <|-- CTRLInfo 
+
+INInfo <|-- IN1
+INInfo <|-- IN2
+INInfo <|-- IN3
+INInfo <|-- IN4
+INInfo <|-- IN5
+INInfo <|-- IN6
+OUTMaterial <|-- OUT1 
+OUTMaterial <|-- OUT2 
+OUTMaterial <|-- OUT3 
+OUTMaterial <|-- OUT4 
+OUTMaterial <|-- OUT5 
+CTRLInfo <|-- CTRL1 
+
+hide members
+hide circle
+hide methods
+@enduml

@@ -1,0 +1,75 @@
+@startuml
+skinparam class {
+	BackgroundColor White
+	ArrowColor Black
+	BorderColor Black
+}
+class Entity as "Потоки"
+
+class Input as "Входной поток"
+class Output as "Выходной поток"
+class Control as "Поток управления"
+
+class INInfo as "Информационные потоки"
+class OUTMaterial as "Информационные потоки"
+class CTRLInfo as "Информационные потоки"
+
+class InFile as "Файл"
+class InClass as "Экземпляр класса"
+
+class IN1 as "Результат проверки"
+class IN2 as "Зона поиска"
+class IN3 as "Оптимальный маршрут"
+class IN4 as "Результат проверки маршрута"
+class IN5 as "Граф карты"
+class IN6 as "Проверенный граф"
+
+class OUT1 as "Возможный маршрут"
+class OUT2 as "Ошибка поиска"
+class OUT3 as "Поправочные данные"
+class OUT4 as "Маршрут"
+class OUT5 as "Пакет данных"
+
+class OutClass as "Экземпляр класса"
+class OutFile as "Файл"
+
+class ContrlClass as "Экземпляр класса"
+
+class CTRL1 as "Поток управления"
+
+Entity <|-- Input 
+Entity <|-- Output 
+Entity <|-- Control 
+
+Input <|-- INInfo 
+Output <|-- OUTMaterial 
+Control <|-- CTRLInfo 
+
+
+
+InClass <|-- IN1
+InClass <|-- IN2
+InClass <|-- IN3
+InClass <|-- IN4
+InFile <|-- IN5
+InFile <|-- IN6
+
+INInfo <|-- InFile
+INInfo <|-- InClass 
+
+OUTMaterial <|-- OutClass
+OUTMaterial <|-- OutFile
+
+OutClass <|-- OUT1 
+OutClass <|-- OUT2 
+OutFile <|-- OUT3 
+OutFile <|-- OUT4 
+OutFile <|-- OUT5 
+
+CTRLInfo <|-- ContrlClass
+ContrlClass <|-- CTRL1 
+
+hide members
+hide circle
+hide methods
+@enduml

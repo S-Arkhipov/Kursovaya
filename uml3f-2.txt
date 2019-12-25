@@ -1,0 +1,34 @@
+@startuml
+skinparam class {
+	BackgroundColor White
+	ArrowColor Black
+	BorderColor Black
+}
+
+class Module as "Программный модуль"
+
+
+class Mod1 as "Блок применения алгоритмов поиска пути"
+class Mod2 as "Блок сравнения эффективности маршрутов"
+class Mod3 as "Блок формирования подграфов"
+class Mod4 as "Блок сохранения маршрутов"
+class Mod5 as "Блок сохранения графов"
+class Mod6 as "Блок проверки достижимости"
+class Mod7 as "Блок проверки полоносвязности"
+class Mod8 as "Блок преобразования"
+
+
+
+Module <|-- Mod1
+Module <|-- Mod2
+Module <|-- Mod3
+Module <|-- Mod4
+Module <|-- Mod5
+Module <|-- Mod6
+Module <|-- Mod7
+Module <|-- Mod8
+
+hide members
+hide circle
+hide methods
+@enduml
